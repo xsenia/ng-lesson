@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-lesson';
+  public title: {text: string} = {text: 'курс по ангуляру'};
+
+  private _money = 3000;
+
+  public getMoney(): number {
+    return this._money * 1.2;
+  }
+
 }
