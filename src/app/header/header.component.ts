@@ -6,10 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
-  //"входной параметр" - внутрь компонента мы общаемся через @Input()
-  @Input()
-  public title: string;
 
   constructor() { }
 
