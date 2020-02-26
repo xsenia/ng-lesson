@@ -6,13 +6,10 @@ import { MatSidenav } from '@angular/material';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent {
 
   @ViewChild('drawer', {static: true})
-  public drawer: MatSidenav;
-
-  ngOnInit() {    
-  }
+  public drawer: MatSidenav;  
 
   public toggle(): void {
     console.log(this.drawer);
