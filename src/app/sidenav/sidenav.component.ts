@@ -9,11 +9,18 @@ import { MatSidenav } from '@angular/material';
 export class SidenavComponent {
 
   @ViewChild('drawer', {static: true})
-  public drawer: MatSidenav;  
+  public drawer: MatSidenav;
+  
+  // constructor(
+  //   drawer: MatSidenav
+  // ) {
+  //   this.drawer = drawer;
+  // }
+  
 
-  public toggle(): void {
-    console.log(this.drawer);
-    this.drawer.toggle();
-  }
+  // public toggle(): void {
+  //   console.log(this.drawer);
+  //   this.drawer.toggle();
+  // }
 
 }
